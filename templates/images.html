@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    {% if randomBool == True %}
+        <img src="{{random}}"/>
+   
+    {% else %}
+        <h1> sorry, no gifs found</h1>
+
+    {% endif %}
+
+    {% for gif in imgData %}
+        <img src="{{gif}}"/>
+    {% endfor %}
+
+
+   
+</body>
+</html>
+
+<div style="display:flex">
+    {% for gif in imgData %}
+    <img src="{{gif}}"/>
+    {% endfor %}
+     </div>
